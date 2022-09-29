@@ -29,14 +29,18 @@ Você pode baixar os webdrivers nos links abaixo:
 ## II. Editor de texto ou IDE
 * [Visual Studio Code](https://code.visualstudio.com/download)
 ## III. Executar um exemplo
-**Nota** Certifique-se de estar dentro da pasta tests
+**Nota** Certifique-se de estar dentro da pasta Tests
 * Digite o seguinte comando no terminal
 `robot -d ../results -x junit-report.xml automation_testing.robot`
+![Terminal_robot](https://user-images.githubusercontent.com/58189901/193100762-e151180b-0f9d-4fa5-9963-b84f228b99e0.png)
+
 * **-d** significa que vai criar um diretório chamado **results** para armazenar os logs
 * **-x** significa que vai criar um arquivo xml com nome de junit-report.xml
 ### 7. Mandando resultados para o TestRail
 **Nota** Certifique-se de estar dentro da pasta results
 * Utilizando seguinte comando `trcli -y -h Insira sua URL --project "Insira o nome do seu projeto" --username Insira seu email --password Insira sua senha parse_junit --title "RF Automated Tests" -f junit-report.xml`
+![Terminal_testrail](https://user-images.githubusercontent.com/58189901/193100914-04ee8d02-83cb-4fcf-8e01-7d6b9ad88648.png)
+
 * **-y, --yes** responda 'yes' a todos os prompts sobre a criação automática
 * **-h, --host** hostname da sua instancia (sua url que foi criada junto a criação da conta)
 * **--project** o nome do seu projeto do TestRail
@@ -45,6 +49,9 @@ Você pode baixar os webdrivers nos links abaixo:
 * **parse_junit** Use-o para analisar e manipular arquivos XML das results criadas do robot
 * **title** o titulo da sua TestRun que vai ser criada no TestRail (Vai na aba TEST RUNS & RESULTS)
 * **-f, --file** Nome do arquivo e o caminho
+
+## Ao fim da execução, esse vai ser o resultado dentro do TestRail
+![TestRun](https://user-images.githubusercontent.com/58189901/193099787-056bf3e1-35ff-429f-abdf-371897f83214.png)
 
 
 

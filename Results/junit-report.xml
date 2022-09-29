@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation Testing" tests="2" errors="0" failures="0" skipped="0" time="82.771" timestamp="2022-09-28T13:16:39.989000">
+<testcase classname="Automation Testing" name="Validação de login de usuario" time="29.307">
+</testcase>
+<testcase classname="Automation Testing" name="Validação do fluxo de pedidos" time="30.332">
+</testcase>
+<properties>
+<property name="Documentation" value="URL da página: http://automationpractice.com/index.php&#10;Autor: Arlison Marreiro Nascimento"/>
+</properties>
+</testsuite>

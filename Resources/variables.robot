@@ -9,8 +9,8 @@ ${LABEL_EMAIL}                                          email
 ${LABEL_PASSWORD}                                       //input[contains(@type,'password')]
 ${BTM_SIGNIN_CONFIRM}                                   //span[contains(.,'Sign in')]
 # Dados do usuário
-${EMAIL_INPUT}                                          arlison.marreiro999@gmail.com
-${PASSWORD_INPUT}                                       marreirohd   
+${EMAIL_INPUT}                                          teste.testando123@gmail.com
+${PASSWORD_INPUT}                                       teste123.   
 # Selecionando os campos
 ${LABEL_SEARCH}                                         //input[@class='search_query form-control ac_input'][contains(@id,'top')]
 ${PRODUTO}                                              Blouse 

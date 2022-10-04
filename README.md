@@ -29,17 +29,16 @@ Você pode baixar os webdrivers nos links abaixo:
 ## II. Editor de texto ou IDE
 * [Visual Studio Code](https://code.visualstudio.com/download)
 ## III. Executar um exemplo
-**Nota** Certifique-se de estar dentro da pasta Tests
+**Nota** Dentro da pagina raiz:
 * Digite o seguinte comando no terminal
-`robot -d ../results -x junit-report.xml automation_testing.robot`
-![Terminal_robot](https://user-images.githubusercontent.com/58189901/193100762-e151180b-0f9d-4fa5-9963-b84f228b99e0.png)
-
-* **-d** significa que vai criar um diretório chamado **results** para armazenar os logs
+`robot -d .\test\logs -x junit-report.xml .\test\features\login_add_to_cart.robot`
+![Terminal_robot](https://user-images.githubusercontent.com/58189901/193938154-40ba640e-a47a-409d-bbfe-a39ec4f3736e.png)
+* **-d** significa que vai criar um diretório chamado **logs** dentro de **test** para armazenar os logs
 * **-x** significa que vai criar um arquivo xml com nome de junit-report.xml
 ### 7. Mandando resultados para o TestRail
-**Nota** Certifique-se de estar dentro da pasta results
+**Nota** Certifique-se de estar dentro da pasta logs
 * Utilizando seguinte comando `trcli -y -h Insira sua URL --project "Insira o nome do seu projeto" --username Insira seu email --password Insira sua senha parse_junit --title "RF Automated Tests" -f junit-report.xml`
-![Terminal_testrail](https://user-images.githubusercontent.com/58189901/193100914-04ee8d02-83cb-4fcf-8e01-7d6b9ad88648.png)
+![Terminal_testrail](https://user-images.githubusercontent.com/58189901/193938331-d4ddeab5-228b-4fee-a48f-ba2272ac7ed2.png)
 
 * **-y, --yes** responda 'yes' a todos os prompts sobre a criação automática
 * **-h, --host** hostname da sua instancia (sua url que foi criada junto a criação da conta)
